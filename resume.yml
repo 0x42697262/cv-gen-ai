@@ -1,0 +1,86 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/jskherman/imprecv/main/cv.typ.schema.json
+
+personal:
+  name: John Rivera
+  email: john@example.com
+  phone: (+1) 555-0100
+  url: https://example.com
+  titles:
+    - Software Engineer
+    - Backend Developer
+  location:
+    city: Austin
+    region: Texas
+    postalCode: "78701"
+    country: United States
+  profiles:
+    - network: GitHub
+      username: johnrivera
+      url: https://github.com/johnrivera
+    - network: LinkedIn
+      username: johnrivera
+      url: https://linkedin.com/in/johnrivera
+
+work:
+  - organization: Acme Systems
+    url: https://example.com
+    location: Austin, Texas
+    positions:
+      - position: Software Engineer
+        startDate: 2023-03-01
+        endDate: "present"
+        highlights:
+          - Rebuilt the webhook delivery worker in Go with bounded retries, cutting dropped events from 1.8% to 0.05% across 2M daily webhooks.
+          - Added PostgreSQL partial indexes and query batching to the billing export endpoint, reducing p95 latency from 4.2s to 310ms.
+          - Wrote runbooks and automated schema-drift checks in CI, eliminating manual migration rollbacks over 14 months.
+  - organization: Northstar Labs
+    url: https://example.com
+    location: Chicago, Illinois
+    positions:
+      - position: Junior Software Developer
+        startDate: 2021-06-01
+        endDate: 2023-02-15
+        highlights:
+          - Built a Python and FastAPI ingestion pipeline that normalized CSV feeds from 12 partners into a single warehouse schema.
+          - Replaced manual QA smoke scripts with pytest integration suites in GitHub Actions, cutting release verification from 2 hours to 12 minutes.
+
+projects:
+  - name: Logwatch CLI
+    url: https://github.com/examplejohnexample/logwatch
+    affiliation: Open Source
+    startDate: 2024-01-01
+    endDate: 2024-06-01
+    highlights:
+      - Built a streaming JSON log filter in Rust that parses 500MB files in under 2 seconds with zero heap allocations per line.
+
+education:
+  - institution: State University
+    url: https://example.com
+    area: Computer Science
+    studyType: Bachelor of Science
+    startDate: 2017-09-01
+    endDate: 2021-05-15
+    location: Austin, Texas
+    honors:
+      - Cum Laude
+    highlights:
+      - "Coursework: Operating Systems, Distributed Systems, Database Internals"
+
+skills:
+  - category: Languages
+    skills:
+      - Go
+      - Python
+      - TypeScript
+      - SQL
+  - category: Frameworks & Tools
+    skills:
+      - FastAPI
+      - PostgreSQL
+      - Redis
+      - Docker
+      - GitHub Actions
+
+languages:
+  - language: English
+    fluency: Native speaker

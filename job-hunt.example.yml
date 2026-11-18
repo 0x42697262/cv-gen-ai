@@ -1,0 +1,48 @@
+# Configuration for /job-hunt.
+# Copy to job-hunt.yml (ignored by git) and fill in your own preferences.
+
+home_country: United States
+timezone_utc_offset: -6
+busy_hours: "09:00-17:00"
+
+accepted_regions:
+  - Worldwide
+  - Anywhere
+  - United States
+  - US
+  - North America
+
+keywords:
+  - python
+  - go
+  - backend
+
+stack:
+  - python
+  - fastapi
+  - go
+  - postgresql
+  - redis
+  - docker
+  - typescript
+
+min_stack_hits: 2
+years_experience: 3.5
+max_age_days: 30
+pay_floor_usd_month: 4000
+
+usd_per:
+  USD: 1.0
+  EUR: 1.08
+  GBP: 1.27
+  AUD: 0.65
+  CAD: 0.72
+  SGD: 0.74
+  PHP: 0.017
+
+exclude_companies:
+  - name: Example Staffing
+    why: "Recruiting agency"
+
+known_agencies:
+  - Example Recruiting

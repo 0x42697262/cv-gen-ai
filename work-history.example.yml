@@ -1,0 +1,28 @@
+# Private record of every job, including ones not on the resume.
+# Copy to work-history.yml (ignored by git) before running skills.
+# Never commit work-history.yml to a public repository.
+
+jobs:
+  - employer: Acme Systems
+    title: Software Engineer
+    type: full-time
+    start: 2023-03-01
+    end: present
+    on_resume: true
+    public_wording: "Backend services, webhook delivery, and PostgreSQL performance."
+    highlights:
+      - Rebuilt webhook delivery worker in Go; dropped events fell from 1.8% to 0.05% across 2M daily events.
+      - Reduced billing export p95 latency from 4.2s to 310ms via PostgreSQL partial indexes and query batching.
+
+  - employer: Side Contract Co
+    title: Backend Consultant
+    type: contract
+    start: 2024-02-01
+    end: present
+    on_resume: false
+    public_wording: ""
+    skills_used:
+      - Python
+      - FastAPI
+      - Redis
+    notes: "Concurrent contract role kept off the resume; skills pooled into resume.yml."
